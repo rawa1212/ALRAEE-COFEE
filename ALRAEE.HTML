@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملاحظات الزبائن - قهوة بن الراعي</title>
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #d1f7d1;  /* خلفية أخضر فاتح */
+    text-align: center;
+    padding: 20px;
+}
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 0 auto;
+            font-size: 1.1em;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            text-align: right;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1.1em;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #4CAF50; /* تغيير لون الحدود عند التركيز */
+            outline: none;
+        }
+        button {
+            background-color: #388E3C;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        button:hover {
+            background-color: #2C6E2D;
+        }
+    </style>
+</head>
+<body>
+    <h1>ملاحظات الزبائن - قهوة بن الراعي</h1>
+    <p>:نحن هنا دائمًا للاستماع إلى ملاحظاتكم وأرائكم لتحسين خدماتنا. يرجى ملء النموذج التالي</p>
+    <form action="#">
+        <label for="name">:الاسم</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">:البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">:رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="product-rating">:تقييم المنتج</label>
+        <select id="product-rating" name="product-rating">
+            <option value="excellent">ممتاز</option>
+            <option value="good">جيد</option>
+            <option value="average">متوسط</option>
+            <option value="poor">سيئ</option>
+        </select>
+
+        <label for="favorite-coffee">:نوع القهوة المفضلة</label>
+        <select id="favorite-coffee" name="favorite-coffee">
+            <option value="espresso"> إسبريسو نيابلوس</option>
+            <option value="latte">القهوه السعوديه</option>
+            <option value="mocha">قلتر نيابلوس</option>
+            <option value="cappuccino">اشقر</option>
+        </select>
+
+        <label for="feedback">:ملاحظاتك</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <button type="submit">إرسال الملاحظات</button>
+    </form>
+</body>
+</html>
+
